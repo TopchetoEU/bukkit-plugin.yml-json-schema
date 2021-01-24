@@ -1,0 +1,29 @@
+{
+  "name": "IllegalEnchants",
+  "version": "1.0.0",
+  "api-version": 1.16,
+  "description": "A simple plugin for allowing illegal enchants for players who have perms for it (with /enchant and anvil)",
+  "author": "TopchetoEU",
+  "main": "me.topchetoeu.illegalEnchants.Main",
+  "prefix": "illegal-enchants",
+  "commands": {
+    "enchant": {
+      "description": "Enchants an item",
+      "aliases": [
+        "enchant"
+      ],
+      "permission": "illegalEnchants.commands.enchant",
+      "permission-message": "You don't have the required permissions to use this command!",
+      "usage": "/enchant [player] <enchant> <max|min|level> [unsafe]"
+    },
+    "anvilpricelimit": {
+      "description": "Enables, disables or sets anvil price limit",
+      "aliases": [
+        "anvilpricelimit"
+      ],
+      "permission": "illegalEnchants.commands.anvilpricelimit",
+      "permission-message": "You don't have the required permissions to use this command!",
+      "usage": "/anvilpricelimit <enable|disable> [player] or set <level> [player]"
+    }
+  }
+}
